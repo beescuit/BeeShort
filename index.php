@@ -24,7 +24,7 @@ include 'config.php';
   </head>
   <body>
     <div class="container">
-      <h1 class="short-title"><img src="images/logo.png" width="400px;" /></h1>
+      <img class="short-title" src="images/logo.png" alt=""/>
       <div class="row">
         <div class="input-field col s6">
           <input type="text" id="url" value="" placeholder="http://google.com/" autocomplete="off" class="form-control" required>
@@ -33,7 +33,7 @@ include 'config.php';
           <input type="text" id="customurl" value="" placeholder="Custom Url" autocomplete="off" class="form-control tooltipped" data-position="bottom" data-delay="50" data-tooltip="<?=$customurltip?>" required>
         </div>
         <div class="input-field col s1">
-          <a class="btn btn-success waves-effect waves-light" onclick="shortUrl()">Short&nbspUrl!</a>
+          <a class="btn btn-success waves-effect waves-light" onclick="shortUrl()">Short&nbsp;Url!</a>
         </div>
       </div>
       <div id="table">

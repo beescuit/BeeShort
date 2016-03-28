@@ -5,6 +5,7 @@ include 'config.php';
 
 <!DOCTYPE html>
 <html>
+<!-- Copyright (c) 2016 BeeCoding -->
   <head>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

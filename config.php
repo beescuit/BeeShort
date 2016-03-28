@@ -2,7 +2,7 @@
 // Mysql info
 $host = "localhost";
 $user = "root";
-$pass = "vertrigo";
+$pass = "";
 $db = "beeshort";
 
 // Put the website URL here, with http:// or https://

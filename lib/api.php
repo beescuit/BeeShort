@@ -29,7 +29,7 @@ if ($_POST['customurl'] == "") {
   $iscustom = 0;
 } else {
   if (!$specialchars) {
-    if (preg_match('/[\'^£$%&*()}{@#~?><>,.|=+¬]/', $_POST['customurl']))
+    if (preg_match('/[\'^£$%&*()}{@#~?><>,.|=+¬áàâãªäÁÀÂÃÄÍÌÎÏíìîïéèêëÉÈÊËóòôõºöÓÒÔÕÖúùûüÚÙÛÜçÇñÑ–“”«»„’‘‹›‚]/', $_POST['customurl']))
     {
       echo "Error:Special characters not allowed!";
       exit();

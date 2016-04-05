@@ -12,7 +12,7 @@ $run = mysqli_query($dbcon, $verify);
 if (mysqli_num_rows($run) == 1) {
   $row = mysqli_fetch_array($run);
   $views = $row['views'] + 1;
-  $viewcount = "UPDATE `shorturls` SET `views` = $views WHERE `ShortUrl` = $code";
+  $viewcount = "UPDATE shorturls SET views='$views' WHERE ShortUrl='$code'";
   mysqli_query($dbcon, $viewcount);
   $url = $row['URL'];
   header( "Location: $url" );

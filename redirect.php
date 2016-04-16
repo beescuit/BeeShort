@@ -5,7 +5,9 @@ include 'config.php';
 $dbcon = mysqli_connect($host,$user,$pass);
 mysqli_select_db($dbcon,$db);
 
-$code = str_replace("/", "", $_SERVER['REQUEST_URI']);
+$code = explode("/", $_SERVER['REQUEST_URI']);
+$length = count($code);
+$code = $code[$length];
 $code = mysqli_real_escape_string($dbcon, $code);
 $verify = "SELECT * FROM `shorturls` WHERE `ShortUrl` = '$code'";
 $run = mysqli_query($dbcon, $verify);
